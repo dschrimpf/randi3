@@ -19,10 +19,11 @@
 
     <modules>
         <module>randi3-core</module>
-       <!-- 
-       <module>randi3-openclinica</module>
-        <moule>randi3-simulation</module>
-       -->
+        <module>randi3-simulation</module>
+
+        <!--
+           <module>randi3-openclinica</module>
+        -->
     </modules>
 
     <properties>
@@ -107,9 +108,9 @@
         </dependency>
 
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-            <version>1.2.17</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.6</version>
         </dependency>
 
         <!-- Test -->
