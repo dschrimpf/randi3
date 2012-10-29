@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.randi3</groupId>
     <artifactId>randi3</artifactId>
-    <version>0.9-SNAPSHOT</version>
+    <version>0.9</version>
     <packaging>pom</packaging>
     <name>RANDI2</name> 
     <description>Online Randomization for Clinical Trials</description> 
@@ -19,9 +19,7 @@
 
     <modules>
         <module>randi3-core</module>
-        <module>randi3-simulation</module>
-
-        <!--
+        <!-- <module>randi3-simulation</module>
            <module>randi3-openclinica</module>
         -->
     </modules>
