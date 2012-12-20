@@ -19,6 +19,8 @@
 
     <modules>
         <module>randi3-core</module>
+        <module>randi3-methods</module>
+        <module>randi3-web</module>
         <!-- <module>randi3-simulation</module>
            <module>randi3-openclinica</module>
         -->
@@ -29,6 +31,13 @@
         <maven.compiler.target>1.5</maven.compiler.target>
         <encoding>UTF-8</encoding>
         <scala.version>2.9.2</scala.version>
+        <!-- Common plugin settings -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>
+        <!-- vscaladoc settings -->
+        <maven.scaladoc.vscaladocVersion>1.2-m1</maven.scaladoc.vscaladocVersion>
+        <vscaladoc.links.liftweb.pathsufix>scaladocs/</vscaladoc.links.liftweb.pathsufix>
+        <vscaladoc.links.liftweb.baseurl>http://scala-tools.org/mvnsites/liftweb</vscaladoc.links.liftweb.baseurl>
     </properties>
 
 
