@@ -22,7 +22,7 @@
         <module>randi3-methods</module>
         <module>randi3-web</module>
         <!-- <module>randi3-simulation</module>      -->
-        <module>randi3-openclinica</module>
+        <module>randi3-edc</module>
     </modules>
 
     <properties>
