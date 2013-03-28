@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.randi3</groupId>
     <artifactId>randi3</artifactId>
-    <version>0.9.2-SNAPSHOT</version>
+    <version>0.9.2</version>
     <packaging>pom</packaging>
     <name>RANDI2</name> 
     <description>Online Randomization for Clinical Trials</description> 
@@ -20,9 +20,9 @@
     <modules>
         <module>randi3-core</module>
         <module>randi3-methods</module>
-        <module>randi3-web</module>
         <!-- <module>randi3-simulation</module>      -->
         <module>randi3-edc</module>
+        <module>randi3-web</module>
     </modules>
 
     <properties>
@@ -232,6 +232,30 @@
                                 <phase>process-resources</phase>
                                 <goals>
                                     <goal>generate</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+                    <plugin>
+                        <groupId>org.scalastyle</groupId>
+                        <artifactId>scalastyle-maven-plugin</artifactId>
+                        <version>0.2.0</version>
+                        <configuration>
+                            <verbose>false</verbose>
+                            <failOnViolation>true</failOnViolation>
+                            <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                            <failOnWarning>false</failOnWarning>
+                            <sourceDirectory>${basedir}/src/main/scala</sourceDirectory>
+                            <testSourceDirectory>${basedir}/src/test/scala</testSourceDirectory>
+                            <configLocation>/home/schrimpf/Projekte/randi3/randi3/lib/scalastyle_config.xml</configLocation>
+                            <outputFile>${project.basedir}/scalastyle-output.xml</outputFile>
+                            <outputEncoding>UTF-8</outputEncoding>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <goals>
+                                    <goal>check</goal>
                                 </goals>
                             </execution>
                         </executions>
