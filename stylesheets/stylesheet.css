@@ -90,7 +90,7 @@ header h2 {
 }
 
 .inner {
-  width: 620px;
+  width: 768px;
   margin: 0 auto;
 }
 
@@ -113,11 +113,11 @@ a.button {
   color: #303030;
   line-height: 25px;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 14px;
   padding: 12px 8px 12px 8px;
   display: block;
   float: left;
-  width: 179px;
+  width: 160px;
   margin-right: 14px;  
   background: #fdfdfd; /* Old browsers */
   background: -moz-linear-gradient(top,  #fdfdfd 0%, #f2f2f2 100%); /* FF3.6+ */
@@ -158,12 +158,23 @@ a.button span {
 #download-tar-gz span {
   background: transparent url(../images/tar-gz-icon.png) 12px 50% no-repeat;
 }
+
+#demo span {
+     background: transparent url(../images/demo-icon.png) 12px 50% no-repeat;
+}
+
+#devSec span {
+     background: transparent url(../images/retro-icon.png) 12px 50% no-repeat;
+}
+
 #view-on-github span {
   background: transparent url(../images/octocat-icon.png) 12px 50% no-repeat;
 }
 #view-on-github {
   margin-right: 0;
 }
+
+
 
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
