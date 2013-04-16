@@ -1,0 +1,51 @@
+<div id="content">
+
+    <h1>Registration</h1>
+
+   <p>A self registration process is possible, if a new user knows the password of trial site.
+   <br />
+       For the registration three steps are necessary:
+    </p>
+
+    <h3>Account information</h3>
+
+     <img src="images/registration1.png"/>
+
+    <p>In the first step includes the choice of a username and a personal password.
+        The username have to be a alphanumeric string, e.g. the email address.
+        It is necessary to retype the password, to avoid a typo during the password choice.
+        <br />
+        To reach the next step of the registration process it is possible to click at the tab "Contact information" or at "Next".
+    </p>
+
+
+
+    <h3>Contact information</h3>
+    <img src="images/registration2.png"/>
+
+    <p>The following information are necessary:
+
+        <ul>
+            <li>First name</li>
+            <li>Last name</li>
+            <li>Email - for notification emails from the system</li>
+            <li>Phone number</li>
+            <li>Language - At the moment RANDI2 supports English and German</li>
+        </ul>
+        <br />
+        To reach the next step of the registration process it is possible to click at the tab "Trial site" or at "Next".
+    </p>
+
+    <h3>Trial site</h3>
+    <img src="images/registration3.png"/>
+
+    <p>In the last step it is necessary to select the trial site and to enter the corresponding password.
+
+        <br />
+
+        To complete the registration it is necessary to click the button "register".  <br />
+        After the successful registration the user can log in with the username and private password.
+    </p>
+
+
+</div>

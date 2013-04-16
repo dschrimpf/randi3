@@ -1,0 +1,84 @@
+<div id="content">
+
+<h1>Users</h1>
+
+
+<p>
+The user contains all account information, like username, password, email address, etc.
+<br/>
+ Every user can have many <a href="generalRoles.html">roles and rights</a>.
+<br/>
+It is possible to deactivate a user, this implies that the user can not log in.
+</p>
+<p>
+ For every user an automatically log with all actions is created. An User with the role administrator can view the log entries. 
+</p>
+
+<p>
+A user contains the following properties:
+</p>
+
+<table class="table-minimal">
+
+<thead>
+<tr>
+<th style="width:20%">Property</th>
+<th style="width:40%">Description</th>
+<th>Constraint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td >Username</td>
+<td >The username is necessary for the log in process.</td>
+<td>String with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>The password is used for the log in process.</td>
+<td>String with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>First name</td>
+<td>The first name of the user.</td>
+<td>String with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>Last name</td>
+<td>The last name of the user.</td>
+<td>String with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>Language</td>
+<td>The language information is used for the localization of the application.</td>
+<td>String with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>Email address</td>
+<td>The system uses the address to send notifications (e.g. randomization)</td>
+<td>String with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>Phone number</td>
+<td>To offer other users the possibility to contact the user.</td>
+<td>String with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>Trial site</td>
+<td>The trial site of the user.</td>
+<td></td>
+</tr>
+<tr>
+<td>Administrator</td>
+<td>A logical value to indicate administrator rights.</td>
+<td>True, false</td>
+</tr>
+<tr>
+<td>Can create trials</td>
+<td>A logical value to indicate the right to create a new trial.</td>
+<td>True, false</td>
+</tr>
+</tbody>
+</table>
+
+</div>

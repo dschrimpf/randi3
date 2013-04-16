@@ -1,0 +1,20 @@
+<div id="content">
+
+<h1>Change a trial site</h1>
+
+    <p>To change the information of a trial site the user need the right "Administrator".
+    The first step is to select the trial site from the list of all sites.
+
+        <br />
+        <img src="images/trialSiteList.png" />
+        <br />
+        With click at the "edit" link a form with the information is shown.
+        <br />
+        <img src="images/trialSiteChange1.png" />
+        <br />
+       With click at the button "save" all changes will be saved.
+    </p>
+
+
+
+</div>

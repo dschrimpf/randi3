@@ -1,0 +1,15 @@
+<div id="content">
+
+<h1>Unlock a locked user</h1>
+
+  <p>A user a user gets automatically locked for 15 minutes after three unsuccessful log in attempts.
+      <br />
+      <img src="images/userList.png" />
+      <br />
+      To unlock the user before the lock time is expired, it is necessary to select the specific user from the user list with the link "edit".
+      <br />
+      <img src="images/userChange1.png" />
+      <br />
+      At the tab "Account" it is possible to unlock a user with a click at the "reset" button.
+  </p>
+</div>

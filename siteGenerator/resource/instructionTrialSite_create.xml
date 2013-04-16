@@ -1,0 +1,17 @@
+<div id="content">
+
+<h1>Create a new trial site</h1>
+
+  <p>A user with the right "Administrator" is able to create a new trial site.
+   Therefore, it is necessary to select the menu item "Trial site" -> "Add".
+      Afterwards it is possible to enter the trial site information in two steps.
+      <br />
+      <img src="images/trialSiteCreate1.png" />
+      <br />
+      In the first step general information (e.g. name, street, ...) are requested. With click at the tab "Password" or at "Next" the last step of the trial site creation process is show.
+      <br />
+      <img src="images/trialSiteCreate2.png" />
+      <br />
+      With the chosen password it is for new user possible to use the self registration process. To finish the creation process it is necessary to click the button "save".
+  </p>
+</div>

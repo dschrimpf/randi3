@@ -1,0 +1,27 @@
+<div id="content">
+
+<h1>Create a new user</h1>
+
+  <p>A user with the right "Administrator" is able to create a new user.
+   Therefore, it is necessary to select the menu item "User" -> "Add".
+      Afterwards it is possible to enter the trial site information in two steps.
+      <br />
+      <img src="images/userCreate1.png" />
+      <br />
+      In the first step account information (username and password) are requested. With click at the tab "General Information" or at "Next" the next step of the user creation process is show.
+      <br />
+      <img src="images/userCreate2.png" />
+      <br />
+     In the tab "General Information" the personal and contact information of the new user are requested. The next step is selection of the trial site, click at the tab or "Next".
+      <br />
+      <img src="images/userCreate3.png" />
+      <br />
+      After the selection of the trial site the last step of the creation process can reached with click at the tab "Rights" or "Next".
+      <br />
+      <img src="images/userCreate4.png" />
+      <br />
+      In the last step is is possible to set the rights of the new user (administrator, trial creation, or if available trial specific roles)
+      <br />
+      To finish the creation process it is necessary to click the button "save".
+  </p>
+</div>

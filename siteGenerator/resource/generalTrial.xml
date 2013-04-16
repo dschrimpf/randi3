@@ -1,0 +1,117 @@
+<div id="content">
+  <script>
+        $(function() {
+       $('.menuLink').click(function(event){                    
+           var target = event.target;  
+          $.get(target, function(data) {
+          var xml =( new XMLSerializer()).serializeToString(data)   
+             $('#content').replaceWith(xml)              
+          });               
+        return false;
+        });
+
+        });
+    </script>
+
+<h1>Trial</h1>
+
+
+<p>
+The central object of the application, which contains all information of ...
+
+<br/>
+It is possible to deactivate a trial site, with the following implications:
+</p>
+
+<h2>Trial status</h2>
+<p>
+In RANDI2 a trial has different statuses with different effects:
+</p>
+<dl>
+	<dt>In Preparation</dt>
+	<dd>It is possible to change the structure of the trial, but the randomization is not allowed.</dd>
+	<dt>Active</dt>
+	<dd>Users with the role investigator can randomize, and the principle Investigator/trial administrator can add new users to the trial or change the status to paused/finished.</dd>
+		<dt>Paused</dt>
+	<dd>The principle Investigators/trial administrators can add new users to the trial or change the status to active/finished, but it is not allowed to randomize patients.</dd>
+		<dt>Finished</dt>
+	<dd>No changes are allowed and users (principle investigator/trial administrator/monitor/statistician) can view and export (CSV format) the randomized patients.</dd>
+</dl>
+
+<h2>Open or closed trial</h2>
+<p>
+In RANDI2 to it is also possible to define open or closed trials. Open means that it is possible to new participating trial sites during the course of the study.
+</p>
+
+<h2>Characteristics</h2>
+
+<p>
+A trial contains the following properties:
+</p>
+
+<table class="table-minimal">
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Constraint</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td >Name</td>
+<td >The name of the trial..</td>
+<td>Alphanumeric string with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>Abbreviation</td>
+<td>The abbreviation of the trial.</td>
+<td>Alphanumeric string with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>Start date</td>
+<td>The start date of the trial.</td>
+<td>Date in the following ISO format: yyyy-MM-dd</td>
+</tr>
+<tr>
+<td>Is Open?</td>
+<td>An logical value to indicate the possibility to add trial sites during the trial course.</td>
+<td>True, false</td>
+</tr>
+<tr>
+<td>Participating Sites</td>
+<td>A list of participating sites, only members of these sites can own one or more of the trial specific roles.</td>
+<td></td>
+</tr>
+<tr>
+<td>Treatment arms</td>
+<td>One or more treatments, the treatment definitions are used by the randomization methods.</td>
+<td>Every treatment consists of the following mandatory information: name, description, and planned subject size.</td>
+</tr>
+<tr>
+<td>Identification creation type</td>
+<td>Specify the way of the creation of the patient identifiers.</td>
+<td>(i) COUNTINUOUS_COUNTER - every new patients get a continuous number<br/>
+	(ii) TRIAL_ARM_COUNTER - the identifier is generated in the following form TrialName_ArmName_ContinuousNumberInArm (e.g. testTrial_arm1_12 - this means that the patients is number 12 in the treatment arm1 in trial testTrial) <br/>
+	(iii) EXTERNAL - the identifier have to be set during the randomization process by the investigator<br/></td>
+</tr>
+<tr>
+<td>Subject properties</td>
+<td>One or more treatments, the treatment definitions are used by the randomization methods.</td>
+<td>see <a href="general/subjectProperties.html" class="menuLink">Definition</a></td>
+</tr>
+<tr>
+<td>Randomization method</td>
+<td>The definition of the used randomization method.</td>
+<td>see <a href="general/subjectProperties.html" class="menuLink">Definition</a></td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Status of the Trial</td>
+<td>IN_PREPARATION, ACTIVE, PAUSED, FINISHED</td>
+</tr>
+</tbody>
+</table>
+
+</div>

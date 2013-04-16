@@ -1,0 +1,65 @@
+<div id="content">
+
+<h1>Trial site</h1>
+
+
+<p>
+Every user is member of one trial site and a trial site can participate at many trials. 
+Only users from a participating site can take part at a trial (e.g. randomize, ...). 
+<br/>
+It is possible to deactivate a trial site, with the following implications:
+</p>
+<ul>
+   <li>every user of the trial site is deactivated</li>
+   <li>users of a deactivated site can't log in</li>
+   <li>it is not possible to register if the site is deactivated</li>
+</ul>
+
+<p>
+A trial site contains the following properties:
+</p>
+
+<table class="table-minimal">
+<thead>
+<tr>
+<th style="width:20%">Property</th>
+<th style="width:40%">Description</th>
+<th>Constraint</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td >Name</td>
+<td >The name of the trial site.</td>
+<td>Alphanumeric string with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>Street</td>
+<td>The street of the trial site.</td>
+<td>Alphanumeric string with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>Post code</td>
+<td>The post code of the trial site.</td>
+<td>Alphanumeric string with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>City</td>
+<td>The city of the trial site.</td>
+<td>Alphanumeric string with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>Country</td>
+<td>The country of the trial site.</td>
+<td>Alphanumeric string with maximal 256 chars.</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>The password of the trial site, this is necessary for the self registration process of users.</td>
+<td>Alphanumeric string with maximal 256 chars.</td>
+</tr>
+</tbody>
+</table>
+
+</div>

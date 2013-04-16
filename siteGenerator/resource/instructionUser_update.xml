@@ -1,0 +1,30 @@
+<div id="content">
+
+<h1>Change a user</h1>
+
+  <p>A user with the right "Administrator" is able to update a user.
+
+      <br />
+      <img src="images/userList.png" />
+      <br />
+      Therefore, it is necessary to select the menu item "Users" -> "List all" and to select a user with the link "edit".
+      <br />
+      <img src="images/userChange1.png" />
+      <br />
+      In the first tab "Account", account data are shown. In this view it is possible to change the password, to (de-)activate, or to reset the lock status (a user gets automatically locked for 15 minutes after three unsuccessful log in attempts) of a user.
+      <br />
+      <img src="images/userChange2.png" />
+      <br />
+      In the tab "General Information" it is possible to change the contact data and the language.
+      <br />
+      <img src="images/userChange3.png" />
+      <br />
+      In the tab "Trial site" it is possible to change the site of a user, if the site changes all trial specific roles will be removed.
+      <br />
+      <img src="images/userChange4.png" />
+      <br />
+      In the last tab "Rights" it is possible to change the rights and the trial specific roles.
+      <br />
+      With click at the button "save" all changes are saved.
+  </p>
+</div>

@@ -1,0 +1,103 @@
+<div id="content">
+
+<h1>Subject properties</h1>
+
+<p>RANDI2 supports five different property types, every property includes a name and a description.
+<br/>
+The following types are available:
+<ul>
+	<li>Date type</li>
+	<li>Ordinal type</li>
+	<li>Integer number</li>
+	<li>Floating point number</li>
+	<li>Free text</li>
+</ul>
+</p>
+
+<p>
+Optional it is possible to define inclusion constraint. With this definition it is not possible to randomize a patient, if the entered value doesn't fulfil the constraint. <br/> 
+<br/>
+In addition it is possible to use the properties as strata for the randomization.
+</p>
+
+<h2>Date type (DateCriterion)</h2>
+
+This type represent a date value in ISO format (yyyy-MM-dd). For example, it can be used for the date of informed consent, the date of birth, or other date values. 
+<br/>
+In the following the definition of such a type is shown: 
+
+<img src="images/DateCriterionDef.png" alt="Definition of a date criterion" /><br/>
+
+With the specification of the inclusion constraint a valid range of the date can be set. If the lower or upper boundary is not set it means that in this direction is no constraint defined.
+
+<br />
+ In the following the view during the randomization is shown:
+ 
+<img src="images/DateCriterionRand.png" alt="Randomization of a date criterion" /><br/>
+ 
+
+<br/>
+<h2>Ordinal type (OrdinalCriterion)</h2>
+
+This type represent a select able value. For example, it can be used for the gender, or a fitness grade. 
+It is possible to define many characteristics (e.g. male and female for gender or fitness grades from A to C).
+<br/>
+In the following the definition of such a type is shown: 
+
+<img src="images/OrdinalCriterionDef.png" alt="Definition of a ordinal criterion" /><br/>
+
+With the specification of the inclusion constraint the valid values are configured. In the example image value C is not allowed.
+
+<br />
+ In the following the view during the randomization is shown (example with gender):
+ 
+<img src="images/OrdinalCriterionRand.png" alt="Randomization of a ordinal criterion" /><br/>
+
+<h2>Integer number (IntegerCriterion)</h2>
+
+This type represent a integer value. For example, it can be used for the age of the patient, or the year of birth. 
+<br/>
+In the following the definition of such a type is shown: 
+
+<img src="images/IntegerCriterionDef.png" alt="Definition of a integer criterion" /><br/>
+
+With the specification of the inclusion constraint a valid range of the integer values can be set. If the lower or upper boundary is not set it means that in this direction is no constraint defined.
+
+<br />
+ In the following the view during the randomization is shown:
+ 
+<img src="images/IntegerCriterionRand.png" alt="Randomization of a integer criterion" /><br/>
+ 
+
+<h2>Floating point number (DoubleCriterion)</h2>
+
+This type represent a floating point number. For example, it can be used for a laboratory value. 
+<br/>
+In the following the definition of such a type is shown: 
+
+<img src="images/DoubleCriterionDef.png" alt="Definition of a double criterion" /><br/>
+
+With the specification of the inclusion constraint a valid range of the double values can be set. If the lower or upper boundary is not set it means that in this direction is no constraint defined.
+
+<br />
+ In the following the view during the randomization is shown:
+ 
+<img src="images/DoubleCriterionRand.png" alt="Randomization of a double criterion" /><br/>
+
+
+<h2>Free text (FreeTextCriterion)</h2>
+
+This type represent a free text value. For example, it can be used for a free text comment. 
+<br/>
+In the following the definition of such a type is shown: 
+
+<img src="images/FreeTextCriterionDef.png" alt="Definition of a free text criterion" /><br/>
+
+With the specification of the inclusion constraint it is necessary to enter the value during the randomization process.
+
+<br />
+ In the following the view during the randomization is shown:
+ 
+<img src="images/FreeTextCriterionRand.png" alt="Randomization of a free text criterion" /><br/>
+
+</div>

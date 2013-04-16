@@ -1,0 +1,18 @@
+<div id="content">
+
+<h1>Overview</h1>
+
+In RANDI2 the following object are used:
+<br />
+<br />
+<dl>
+	<dt>Trial site</dt>
+	<dd>The study centres, every user belongs to one and a trial site can participate at a trial.</dd>
+	<dt>User</dt>
+	<dd>A user is a person, who are able to work with the system. Every user belongs to an trial site and can have different roles.</dd>
+<dt>Trial</dt>
+	<dd>A trial contains the setting (patient properties, randomization methods, etc.) and the randomized patients.</dd>
+</dl>
+
+
+</div>

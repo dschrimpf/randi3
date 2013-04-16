@@ -1,0 +1,28 @@
+<div id="content">
+
+<h1>Role concept</h1>
+
+<p>RANDI2 supports in general the following trial independent rights:
+</p>
+ 
+ <dl>
+	<dt>Administrator</dt>
+	<dd>The right to create and change users and trial sites.</dd>
+	<dt>Trial create right</dt>
+	<dd>The right to create a new trial, the user is automatically trial administrator of the new study.</dd>
+</dl>
+
+<p>
+The other roles are trial specific and every user can own more than one role in a trial:
+</p>
+
+ <dl>
+	<dt>Trial administrator/principle investigator</dt>
+	<dd>Responsible for the management of the study (add/remove participating users, changes of trial characteristics or the trial status)</dd>
+	<dt>Investigator</dt>
+	<dd>The role to perform the randomization</dd>
+	<dt>Monitor/ statistician</dt>
+	<dd>Can view the trial course and export the randomization data.</dd>
+</dl>
+
+</div>

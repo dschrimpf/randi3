@@ -1,0 +1,14 @@
+<div id="content">
+
+    <h1>(De-)activate a user</h1>
+
+    <p>
+        <img src="images/userList.png" />
+        <br />
+        To (de-)activate the user before the lock time is expired, it is necessary to select the specific user from the user list with the link "edit".
+        <br />
+        <img src="images/userChange1.png" />
+        <br />
+        At the tab "Account" it is possible to (de-)activate a user with a click at the "active" checkbox, afterwards it is necessary to save the change with a click at the button "save".
+    </p>
+</div>

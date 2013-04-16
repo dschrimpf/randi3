@@ -1,0 +1,12 @@
+<div id="content">
+
+    <h1>Login process</h1>
+
+
+    <img src="images/login.png" />
+    <p>
+     On the login page the user can enter the credentials (username and private password) and perform the authentication with click at the login button.
+
+    </p>
+
+</div>

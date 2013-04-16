@@ -1,0 +1,17 @@
+<div id="content">
+
+    <h1>(De-)Activation of a trial site</h1>
+
+    <p>A user with the right "Administrator" is able to (de-)activate a trial site. For users of a deactivated trial site it is not possible to log in.
+      <br />
+        The first step to (de-)activate a trial site is to select it with the "edit" link.
+         <br />
+        <img src="images/trialSiteList.png"/>
+        <br/>
+        After the selection the trial site can (de-)activated with a click at the menu item "Activate" respectively "Deactivate".
+        It is necessary to confirm the process with a click at the button.
+        <br />
+        <img src="images/trialSiteDeactivate.png" />
+    </p>
+
+</div>
