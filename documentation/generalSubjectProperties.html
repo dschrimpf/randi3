@@ -1,0 +1,265 @@
+<html>
+    <head>
+        <meta charset="utf-8"></meta>
+        <meta content="chrome=1" http-equiv="X-UA-Compatible"></meta>
+        <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Chivo:900"></link>
+        <link media="screen" href="stylesheets/stylesheet.css" type="text/css" rel="stylesheet"></link>
+        <link media="screen" href="stylesheets/pygment_trac.css" type="text/css" rel="stylesheet"></link>
+        <link media="print" href="stylesheets/print.css" type="text/css" rel="stylesheet"></link>
+        <link rel="stylesheet" href="stylesheets/custom-theme/jquery-ui-1.10.2.custom.css"></link>
+        <script src="javascripts/jquery-1.9.1.min.js"></script>
+        <script src="javascripts/jquery-ui-1.10.2.custom.js"></script>
+        
+
+        <script>
+            $(function() {
+            $(&quot;#menu&quot;).menu();
+            });
+        </script>
+
+        <title>RANDI3 by dschrimpf</title>
+    </head>
+
+    <body>
+
+
+        <div id="container">
+            <div style="width:1000px;" class="inner">
+
+                <header>
+                    <h1>
+                        <img style="vertical-align:middle" width="250px" src="images/randi2withSlogan.png"></img>
+                        - Documentation
+                    </h1>
+
+                </header>
+
+                <hr></hr>
+
+                <div id="wrapper">
+                    <div id="first">
+                        <ul style="width:170px; font-size:90%;">
+                            <li id="general" class="home">
+                                <a href="generalOverview.html">General</a>
+                                <ul>
+                                    <li>
+                                        <a href="generalOverview.html">Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="generalTrialSite.html">Trial site</a>
+                                    </li>
+                                    <li>
+                                        <a href="generalUser.html">User</a>
+                                    </li>
+                                    <li>
+                                        <a href="generalRoles.html">Role concept</a>
+                                    </li>
+                                    <li>
+                                        <a href="generalTrial.html">Trial</a>
+                                    </li>
+                                    <li>
+                                        <a href="generalSubjectProperties.html">Subject property</a>
+                                    </li>
+                                    <li>
+                                        <a href="generalRM.html">Randomization</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="about">
+                                <a href="instructionOverview.html">Instructions</a>
+                                <ul>
+                                    <li>
+                                        <a href="instructionGeneral.html">General</a>
+                                    </li>
+                                    <li>
+                                        <a href="instructionUser_registration.html">Registration</a>
+                                    </li>
+                                    <li>
+                                        <a href="instructionUser_login.html">Log in</a>
+                                    </li>
+                                    <li>
+                                        <a href="generalTrialSite.html">Trial site</a>
+                                        <ul>
+                                            <li>
+                                                <a href="instructionTrialSite_create.html">Create</a>
+                                            </li>
+                                            <li>
+                                                <a href="instructionTrialSite_update.html">Change</a>
+                                            </li>
+                                            <li>
+                                                <a href="instructionTrialSite_deactivate.html">De-/Activate</a>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="generalUser.html">User</a>
+                                        <ul>
+                                            <li>
+                                                <a href="instructionUser_create.html">Create</a>
+                                            </li>
+                                            <li>
+                                                <a href="instructionUser_update.html">Change</a>
+                                            </li>
+                                            <li>
+                                                <a href="instructionUser_locked.html">Locked users</a>
+                                            </li>
+                                            <li>
+                                                <a href="instructionUser_deactivate.html">De-/Activate</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="generalTrial.html">Trial</a>
+                                        <ul>
+                                            <li>
+                                                <a href="instructionTrial_create.html">Create</a>
+                                            </li>
+                                            <li>
+                                                <a href="instructionTrial_update.html">Change</a>
+                                            </li>
+                                            <li>
+                                                <a href="instructionTrial_changeStatus.html">Change status</a>
+                                            </li>
+                                            <li>
+                                                <a href="instructionTrial_addSite.html">Add site</a>
+                                            </li>
+                                            <li>
+                                                <a href="instructionTrial_addUser.html">Add user</a>
+                                            </li>
+                                            <li>
+                                                <a href="instructionTrial_randomize.html">Randomization</a>
+                                            </li>
+                                            <li>
+                                                <a href="instructionTrial_viewRandomizations.html">View results</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li class="contact">
+                                <a target="_blanck" href="http://www.randi2.org/redmine/projects/randi2">Wiki, ...</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div id="second">
+                        <div id="content">
+
+<h1>Subject properties</h1>
+
+<p>RANDI2 supports five different property types, every property includes a name and a description.
+<br></br>
+The following types are available:
+<ul>
+	<li>Date type</li>
+	<li>Ordinal type</li>
+	<li>Integer number</li>
+	<li>Floating point number</li>
+	<li>Free text</li>
+</ul>
+</p>
+
+<p>
+Optional it is possible to define inclusion constraint. With this definition it is not possible to randomize a patient, if the entered value doesn't fulfil the constraint. <br></br> 
+<br></br>
+In addition it is possible to use the properties as strata for the randomization.
+</p>
+
+<h2>Date type (DateCriterion)</h2>
+
+This type represent a date value in ISO format (yyyy-MM-dd). For example, it can be used for the date of informed consent, the date of birth, or other date values. 
+<br></br>
+In the following the definition of such a type is shown: 
+
+<img alt="Definition of a date criterion" src="images/DateCriterionDef.png"></img><br></br>
+
+With the specification of the inclusion constraint a valid range of the date can be set. If the lower or upper boundary is not set it means that in this direction is no constraint defined.
+
+<br></br>
+ In the following the view during the randomization is shown:
+ 
+<img alt="Randomization of a date criterion" src="images/DateCriterionRand.png"></img><br></br>
+ 
+
+<br></br>
+<h2>Ordinal type (OrdinalCriterion)</h2>
+
+This type represent a select able value. For example, it can be used for the gender, or a fitness grade. 
+It is possible to define many characteristics (e.g. male and female for gender or fitness grades from A to C).
+<br></br>
+In the following the definition of such a type is shown: 
+
+<img alt="Definition of a ordinal criterion" src="images/OrdinalCriterionDef.png"></img><br></br>
+
+With the specification of the inclusion constraint the valid values are configured. In the example image value C is not allowed.
+
+<br></br>
+ In the following the view during the randomization is shown (example with gender):
+ 
+<img alt="Randomization of a ordinal criterion" src="images/OrdinalCriterionRand.png"></img><br></br>
+
+<h2>Integer number (IntegerCriterion)</h2>
+
+This type represent a integer value. For example, it can be used for the age of the patient, or the year of birth. 
+<br></br>
+In the following the definition of such a type is shown: 
+
+<img alt="Definition of a integer criterion" src="images/IntegerCriterionDef.png"></img><br></br>
+
+With the specification of the inclusion constraint a valid range of the integer values can be set. If the lower or upper boundary is not set it means that in this direction is no constraint defined.
+
+<br></br>
+ In the following the view during the randomization is shown:
+ 
+<img alt="Randomization of a integer criterion" src="images/IntegerCriterionRand.png"></img><br></br>
+ 
+
+<h2>Floating point number (DoubleCriterion)</h2>
+
+This type represent a floating point number. For example, it can be used for a laboratory value. 
+<br></br>
+In the following the definition of such a type is shown: 
+
+<img alt="Definition of a double criterion" src="images/DoubleCriterionDef.png"></img><br></br>
+
+With the specification of the inclusion constraint a valid range of the double values can be set. If the lower or upper boundary is not set it means that in this direction is no constraint defined.
+
+<br></br>
+ In the following the view during the randomization is shown:
+ 
+<img alt="Randomization of a double criterion" src="images/DoubleCriterionRand.png"></img><br></br>
+
+
+<h2>Free text (FreeTextCriterion)</h2>
+
+This type represent a free text value. For example, it can be used for a free text comment. 
+<br></br>
+In the following the definition of such a type is shown: 
+
+<img alt="Definition of a free text criterion" src="images/FreeTextCriterionDef.png"></img><br></br>
+
+With the specification of the inclusion constraint it is necessary to enter the value during the randomization process.
+
+<br></br>
+ In the following the view during the randomization is shown:
+ 
+<img alt="Randomization of a free text criterion" src="images/FreeTextCriterionRand.png"></img><br></br>
+
+</div>
+                    </div>
+                </div>
+                <footer>
+                    RANDI3 is maintained by
+                    <a href="https://github.com/dschrimpf">dschrimpf</a>
+                    <br></br>
+                    This page was generated by<a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by<a href="http://twitter.com/jasonlong">Jason Long</a>.
+                </footer>
+
+
+            </div>
+        </div>
+    </body>
+</html>
