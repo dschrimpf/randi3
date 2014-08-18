@@ -7,15 +7,15 @@ RANDI2/randi3 (since version 0.9) is an open source application for online rando
 The project is devided into several subproject with the following structure:
 
 - randi3 (https://github.com/dschrimpf/randi3)
--- randi3-core (https://github.com/dschrimpf/randi3-core)
--- randi3-edc (https://github.com/dschrimpf/randi3-edc)
--- randi3-methods (https://github.com/dschrimpf/randi3-methods)
---- randi3-method-adaptive (https://github.com/dschrimpf/randi3-method-adaptive)
---- randi3-method-block (https://github.com/dschrimpf/randi3-method-bock)
---- randi3-method-complete (https://github.com/dschrimpf/randi3-method-complete)
---- randi3-method-minimization (https://github.com/dschrimpf/randi3-method-minimization)
---- randi3-method-truncated (https://github.com/dschrimpf/randi3-method-truncated)
---- randi3-method-WeiUrnDesign
--- randi3-simulation (https://github.com/dschrimpf/randi3-simulation)
--- randi3-web
+..- randi3-core (https://github.com/dschrimpf/randi3-core)
+..- randi3-edc (https://github.com/dschrimpf/randi3-edc)
+..- randi3-methods (https://github.com/dschrimpf/randi3-methods)
+...- randi3-method-adaptive (https://github.com/dschrimpf/randi3-method-adaptive)
+...- randi3-method-block (https://github.com/dschrimpf/randi3-method-bock)
+...- randi3-method-complete (https://github.com/dschrimpf/randi3-method-complete)
+...- randi3-method-minimization (https://github.com/dschrimpf/randi3-method-minimization)
+...- randi3-method-truncated (https://github.com/dschrimpf/randi3-method-truncated)
+...- randi3-method-WeiUrnDesign
+..- randi3-simulation (https://github.com/dschrimpf/randi3-simulation)
+..- randi3-web
 
