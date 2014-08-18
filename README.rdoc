@@ -1,6 +1,7 @@
 = RANDI2
 RANDI2/randi3 (since version 0.9) is an open source application for online randomization of clinical trials. It has been originally developed at University of Heidelberg (Germany) and Heilbronn University (Germany).
 
+More information can be found under http://dschrimpf.github.io/randi3/
 
 == Project module structure
 
@@ -17,5 +18,6 @@ The project is devided into several subproject with the following structure:
     - randi3-method-truncated (https://github.com/dschrimpf/randi3-method-truncated)
     - randi3-method-WeiUrnDesign
   - randi3-simulation (https://github.com/dschrimpf/randi3-simulation)
-  - randi3-web
+  - randi3-web (https://github.com/dschrimpf/randi3-web)
+
 
